@@ -1,0 +1,24 @@
+Day 1  
+01/05/2023
+
+input:
+india
+china
+
+output
+3
+
+explanation
+The comman characters are i,n,a
+
+code
+n=input()
+k=input()
+c=0
+e=set(n)
+f=set(k)
+for i in e:
+    for j in f:
+        if i==j:
+            c+=1
+print(c)
