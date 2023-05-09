@@ -1,0 +1,48 @@
+Day4
+
+#geeksforgeeks
+Example 1:
+
+Input: N = 5
+arr[] = 90 100 78 89 67
+Output: 89
+Explanation: After sorting the array 
+middle element is the median 
+
+Example 2:
+
+Input: N = 4
+arr[] = 56 67 30 79
+Output: 61
+Explanation: In case of even number of 
+elements, average of two middle elements 
+is the median.
+
+class Solution:
+	def find_median(self, v):
+		# Code here
+		d=sorted(v)
+		if len(v)%2!=0:
+		    y=len(v)//2
+		    i=d[y]
+		    return i
+		else:
+		    y=len(v)//2
+		    j=(d[y]+d[(y-1)])//2
+		  #  i=v[j]
+		    return j
+
+
+#{ 
+ # Driver Code Starts
+#Initial Template for Python 3
+
+if __name__ == '__main__':
+	T=int(input())
+	for i in range(T):
+		n = int(input())
+		v = list(map(int,input().split())) 
+		ob = Solution();
+		ans = ob.find_median(v)
+		print(ans)
+# } Driver Code Ends
