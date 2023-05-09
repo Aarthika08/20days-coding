@@ -1,0 +1,48 @@
+Day 3
+#geeks for geeks
+Input: a[] = {-5, 3, 6, 12, 15}, b[] = {-12, -10, -6, -3, 4, 10}
+Output: The median is 3.
+Explanation: The merged array is: ar3[] = {-12, -10, -6, -5 , -3, 3, 4, 6, 10, 12, 15}.
+So the median of the merged array is 3
+
+Find the median of 2 sorted arrays
+v=[]
+g=[]
+
+n=int(input())
+
+for i in range(0,n):
+    e=int(input())
+    v.append(e)
+t=int(input())
+
+for i in range(0,t):
+    e=int(input())
+    g.append(e)    
+    
+    
+# g = list(map(int,input().split()))
+
+
+d=v+g
+d.sort()
+	
+if len(v)%2!=0:
+		    y=len(d)//2
+		    i=d[y]
+		    print(i)
+else:
+		    y=len(d)//2
+		    j=(d[y]+d[(y-1)])/2
+		  #  i=v[j]
+		    print(j)
+
+
+		 
+
+
+	     
+
+	
+
+
