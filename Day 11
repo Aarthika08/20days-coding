@@ -1,0 +1,26 @@
+Day 11
+//geeksforgeeks
+count of 1 bits
+
+class Solution:
+	def setBits(self, N):
+		# code here
+		d=bin(N)
+		c=d.count("1")
+	    return c
+
+
+#{ 
+ # Driver Code Starts
+#Initial Template for Python 3
+
+if _name_ == '_main_':
+	T=int(input())
+	for i in range(T):
+		N = int(input())
+		ob = Solution()
+		ans = ob.setBits(N)
+		print(ans)
+
+
+
