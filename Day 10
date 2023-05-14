@@ -1,0 +1,46 @@
+Day 10
+//geeksforgeeks
+median with matrix
+
+#User function Template for python3
+from decimal import Decimal
+import statistics
+
+class Solution:
+    def median(self, matrix, R, C):
+    	#code here 
+    	a=[]
+    	t=0
+    	l=0
+    	b=0
+    	m=list(sorted(matrix))
+    	for i in range(0,R):
+    	    for j in range(C):
+    	        a.append(matrix[i][j])
+            # print(statistics.median(a))
+
+    	b=sorted(a)
+    	n=len(a)
+    	if n%2!=0:
+    	    t=n//2
+    	    l=(b[t])
+            return l
+#{ 
+ # Driver Code Starts
+#Initial Template for Python 3
+
+if __name__ == '__main__': 
+    ob = Solution()
+    t = int (input ())
+    for _ in range (t):
+        r,c = map(int,input().strip().split())
+        matrix = [[0 for j in range(c)] for i in range(r)]
+        for i in range(r):
+            t=[int(el) for el in input().split()]
+            for j in range(c):
+                matrix[i][j]=t[j]
+        ans = ob.median(matrix, r, c);
+        print(ans)
+# } Driver Code Ends
+
+
