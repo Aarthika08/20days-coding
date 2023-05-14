@@ -1,0 +1,16 @@
+Day 12
+//geeksforgeeks
+Anagram of set of numbers
+ dic={}
+        lis=[]
+        for i in words:
+            t=str(sorted(i))
+            if t not in dic:
+                dic[t]=[i]
+                lis.append(t)
+            else:
+                dic[t].append(i)
+        ans=[]
+        for i in lis:
+            ans.append(dic[i])
+        return ans
