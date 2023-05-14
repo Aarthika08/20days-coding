@@ -1,0 +1,46 @@
+Day 13
+//geeksforgeeks
+Power of 2
+
+class Solution:
+    ##Complete this function
+    # Function to check if given number n is a power of two.
+    def isPowerofTwo(self,n):
+        ##Your code here
+        if n==0:
+            return 0
+        while n!=1:
+            if n%2!=0:
+                return 0
+            n=n//2
+        return 1
+    
+
+
+#{ 
+ # Driver Code Starts
+#Initial Template for Python 3
+
+import math
+
+
+def main():
+    
+    T=int(input())
+    
+    while(T>0):
+        
+        
+        n=int(input())
+        ob=Solution()
+        if ob.isPowerofTwo(n):
+            print("YES")
+        else:
+            print("NO")
+        
+        T-=1
+
+if _name=="main_":
+    main()
+# } Driver Code Ends
+
