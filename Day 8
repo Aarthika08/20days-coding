@@ -1,0 +1,13 @@
+DAY 8
+//geeks for geeks
+subset with 0 sum
+  ns=0
+ s=set()
+for i in range(n):
+            ns +=arr[i]
+           
+if ns==0 or ns in s:
+                # l.append(l[j: i])
+                  return 1
+ s.add(ns)
+ return 0    
