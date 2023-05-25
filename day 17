@@ -1,0 +1,9 @@
+Day 17
+remove duplicates from sorted array
+leetcode
+
+remove duplicates from sorted array
+for i in nums:
+   while nums.count(i)>2:
+       nums.remove(i)
+return len(nums)       
