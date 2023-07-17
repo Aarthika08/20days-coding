@@ -1,0 +1,33 @@
+permutations
+from itertools  import permutations
+print([''.join (i) for i in permutations("ONE")])
+print([''.join(p) for p in permutations('dune')])
+
+def permutations(string, step = 0):
+    if step == len(string):
+        # we've gotten to the end, print the permutation
+        print ("".join(string))
+    for i in range(step, len(string)):
+        # copy the string (store as array)
+        string_copy = [c for c in string]
+         # swap the current index with the step
+        string_copy[step], string_copy[i] =string_copy[i], string_copy[step]
+         # recurse on the portion of the stringthat has not been swapped yet
+        permutations(string_copy, step + 1)
+print (permutations ('one'))
+
+output
+
+['ONE', 'OEN', 'NOE', 'NEO', 'EON', 'ENO']
+['dune', 'duen', 'dnue', 'dneu', 'deun', 'denu', 'udne', 'uden', 'unde', 'uned', 'uedn', 'uend', 'ndue', 'ndeu', 'nude', 'nued', 'nedu', 'neud', 'edun', 'ednu', 'eudn', 'eund', 'endu', 'enud']
+one
+oen
+noe
+neo
+eno
+eon
+None
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.
