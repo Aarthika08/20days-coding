@@ -1,4 +1,4 @@
-permutations
+permutations-24
 from itertools  import permutations
 print([''.join (i) for i in permutations("ONE")])
 print([''.join(p) for p in permutations('dune')])
