@@ -1,0 +1,40 @@
+# How do you check if a string contains only digits?
+import re
+
+st='higf89gf'
+string2='122344'
+for i in st:
+    if i.isdigit():
+        print(i,"true")
+        
+    
+if string2.isdigit():
+        print("String2 contains all numbers")
+else:
+    print("String2 doesn't contains all numbers")
+
+if string2.isnumeric():
+        print("String2 contains all numbers")
+else:
+    print("String2 doesn't contains all numbers")
+
+if re.match('^[0-9]*$',string2):
+    print ("String2 contains all numbers")
+else:
+    print ("String2 doesn't contains all numbers")
+
+try:
+    num = int(st)
+    print ("String1 contains only digits")
+except:
+    print ("String1 doesn'tcontains only digits")
+
+output
+
+================================================= RESTART: C:/Users/Python/Python311/strings/isdigit.py =================================================
+8 true
+9 true
+String2 contains all numbers
+String2 contains all numbers
+String1 contains all numbers
+String1 doesn'tcontains only digits
