@@ -1,0 +1,20 @@
+#  How do you check if a given string is a palindrome?
+str1='abcdcba'
+print(str1[::-1])
+print(reversed(str1))
+print(''.join(list(reversed(str1))))
+if str1==str1[::-1]:
+    print("palindrome")
+    
+else:    
+        print("not palindrome")
+
+
+abcedcba
+<reversed object at 0x7faead6f8310>
+abcedcba
+not palindrome
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.
