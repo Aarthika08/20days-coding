@@ -1,0 +1,20 @@
+ first non-repeating character-26
+How do you find the first non-repeating character in a string?
+from collections import Counter
+n=input()
+print(Counter(n))
+b=Counter(n)
+for d,n in b.items():
+    if n == 1:
+        print(d)
+        break
+
+
+output
+teeter
+Counter({'e': 3, 't': 2, 'r': 1})
+r
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.
