@@ -9,3 +9,26 @@ greeting = reversed("Hello, World!")
 print(next(greeting))
 print(next(greeting))
 print(next(greeting))
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+dcba
+<reversed object at 0x7fb25c224310>
+dcba
+bd
+!
+d
+l
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+The strip() method removes any leading, and trailing whitespaces.
+synstax--string.strip(characters)
+
+txt = ",,,,,rrttgg.....example....rrr"
+
+x = txt.strip(",.grt")
+
+print(x)//example
