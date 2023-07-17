@@ -1,0 +1,11 @@
+str1='abcd'
+print(str1[::-1])
+print(reversed(str1))
+print(''.join(list(reversed(str1))))
+# Strings are immutable in Python, so reversing a given string in place isn't possible. 
+# You'll need to create reversed copies of your target strings to meet the requirement.
+print(str1[1::2])
+greeting = reversed("Hello, World!")
+print(next(greeting))
+print(next(greeting))
+print(next(greeting))
