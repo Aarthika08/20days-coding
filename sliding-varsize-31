@@ -1,4 +1,4 @@
-sliding-fixedsize
+sliding-varsize
 wstart=0
 tsum=9
 wsum=0
