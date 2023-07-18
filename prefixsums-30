@@ -18,3 +18,6 @@ for i in nums:
         d[presum]+=1
 
 print(res)            
+
+============================================ RESTART: C:/Users/Python/Python311/strings/subarrays/prefixsum.py==============================================
+2
