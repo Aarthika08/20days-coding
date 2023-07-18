@@ -1,0 +1,16 @@
+#  How can a given string be reversed using recursion?
+# c = input("Enter three values: ").split()
+def reverse1(s):
+    if len(s) == 0:
+        return s
+    else:
+        return reverse1(s[1:]) + s[0]
+ 
+c = input("Enter  values: ")
+print(reverse1(c))
+=======================================================================================================================================================Enter  values: apple
+elppa
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.
