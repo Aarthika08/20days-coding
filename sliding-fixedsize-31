@@ -1,0 +1,17 @@
+sliding-fixedsize
+wstart=0
+tsum=9
+wsum=0
+result=[]
+nums=[1,3,2,4,5,3,6]
+for i in range(len(nums)):
+    wsum=wsum+nums[i]
+    while wsum>tsum:
+            wsum=wsum-nums[wstart]
+            wstart+=1
+            if tsum==wsum:
+                result.append(nums[wstart:i+1])
+print(result)
+
+============================ RESTART: C:/Users/Python/Python311/strings/subarrays/sliding.py=================================
+[[3, 2, 4], [4, 5], [3, 6]]
