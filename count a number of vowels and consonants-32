@@ -1,0 +1,11 @@
+#  How do you count a number of vowels and consonants in a given string?
+# c = input("Enter three values: ").split()
+c = input("Enter three values: ")
+
+c1=0
+for i in c:
+    if(i=='a' or i=='e' or i=='i' or i=='o' or i=='u'):
+        print('hi')
+        c1+=1
+        
+print("the number of vowels in he string is ",c1,'the number of count in consotants',len(c)-c1,len(c))        
