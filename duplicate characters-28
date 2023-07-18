@@ -1,0 +1,18 @@
+ #How do you find duplicate characters in a given string?
+d={}
+n=input()
+l=[]
+k=0
+for i in  n:
+    if i not in d:
+        d[i]=k
+        k+=1
+    elif i in d:
+        l.append(i)
+
+
+print(''.join(set(l)))        
+
+======================== RESTART: C:\Users\Python\Python311\strings\duplicate-characters.py========================================
+teetoller
+tle
