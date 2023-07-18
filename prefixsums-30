@@ -1,0 +1,20 @@
+#prefix sums algorithm-----subarrays
+presum=0
+res=0
+d = {0 : 1}
+count=0
+nums = [1,1,1]
+k = 2
+for i in nums:
+    presum+=i
+   # if presum==k:
+     #   count+=1
+    if (presum-k) in d:
+        res=res+d[presum-k]
+        count+=1
+    if(presum) not in d:
+        d[presum]=1
+    else:
+        d[presum]+=1
+
+print(res)            
