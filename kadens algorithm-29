@@ -1,0 +1,18 @@
+#kaden's algorithm-----subarrays
+
+temp=0
+maxi=0
+n=[1,2,3,5,7,8]
+for i in n:
+    if temp<0:
+        temp=0
+    temp=temp+i
+    if temp>maxi:
+        maxi=temp
+
+
+print(maxi)        
+
+
+========================== RESTART: C:/Users/Python/Python311/strings/subarrays/kadens-algo.py====================================
+26
