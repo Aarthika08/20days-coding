@@ -1,0 +1,23 @@
+# How do you check if a string contains only alphabetic characters?
+
+
+txt = input("Enter  values: ")
+
+x = txt.isnumeric()
+
+print('It is only numeric',x)
+c = input("Enter  values to check alpahbets: ")
+
+x = c.isalpha()
+print(x)
+print('It is only alphabets',x)
+========================================================================================================================================================
+Enter three values: 876
+True
+Enter three values: oihb
+True
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.
+    
