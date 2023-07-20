@@ -1,0 +1,43 @@
+substring
+contiguous sequence of characters within a string
+
+ How do you find all the substrings of a string?
+
+st='aarthika'
+for i in range(len(st)):
+    for j in range(i):
+        print(st[j:i])
+
+        
+a
+aa
+a
+aar
+ar
+r
+aart
+art
+rt
+t
+aarth
+arth
+rth
+th
+h
+aarthi
+arthi
+rthi
+thi
+hi
+i
+aarthik
+arthik
+rthik
+thik
+hik
+ik
+k
+
+
+        
+
