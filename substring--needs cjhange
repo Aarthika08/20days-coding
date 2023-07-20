@@ -1,0 +1,18 @@
+#How do you find the first substring of a string that matches a given pattern?
+st=input()
+k=input()
+flag=0
+for i in range(len(st)+1):
+    for j in range(i):
+        v=st[j:i]
+        print(st[j:i])
+        if v==k:
+            flag=1
+            break
+        
+if flag==1:
+    print('it is here',k)
+
+else:
+    print(' No it is not here',k)
+
