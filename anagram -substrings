@@ -1,0 +1,58 @@
+anagram and not anagram  in substrings
+from collections import Counter
+
+
+
+s = "cbaebabacd"
+p = "abc"            
+slen,plen=len(s),len(p)
+if slen<plen:
+            print(0)
+pcount=Counter(p)
+scount=Counter()    
+res=[]
+l=[]
+p=[]
+for i in range(slen):
+            scount[s[i]]+=1
+            
+            if i>=plen:
+               if scount[s[i-plen]]==1:
+
+                    del scount [s[i-plen]]
+               else:
+                p.append(s[i])
+
+                scount [s[i-plen]]  -=1  
+            if pcount==scount:
+
+                  res.append(i-plen+1)
+print('starting index of that anagram',res) 
+print('angaram')  
+print(list(set(p) ) ) 
+v=list(set(p) ) 
+print(''.join(v))
+for j in range(slen):
+    if j not in res:
+        scount[s[j]]+=1
+        l.append(s[j])
+        # print(s[j],end=' ') 
+print(l)  
+print('not angaram')     
+# v=list(set(l) ) 
+print(''.join(l))     
+=======================================================================================================================================================
+starting index of that anagram [0, 6]
+angaram
+['a', 'c', 'b']
+acb
+['b', 'a', 'e', 'b', 'a', 'a', 'c', 'd']
+not angaram
+baebaacd
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.
+     
+     
+     
