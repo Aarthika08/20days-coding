@@ -1,0 +1,36 @@
+s='theatre'
+l=0
+r=0
+d={0:0}
+n=len(s)
+m=0
+ans=''
+v=['a','e','i','o','u','A','I','O','U','E']
+for i in range(n):
+   if s[i]  in v :
+        ans+=s[i]
+print(ans)
+print(len(ans))
+
+eae
+3
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.
+
+
+How do you find the longest substring of a string that contains only vowels
+
+s="theeare"
+c=0
+n=len(s)
+r,l=0,0
+d={0:0}
+v=['a','e','i','o','u','A','E','I','O','U']
+while r<n:
+    while(s[r] not in v and l<=r):
+        l+=1
+    c=max(c,r-l+1)
+    r+=1
+print(c)
