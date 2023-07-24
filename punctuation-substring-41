@@ -1,0 +1,24 @@
+s='th...eatr.e'
+l=0
+r=0
+d={0:0}
+n=len(s)
+m=0
+ans=''
+v=['.',',',' ','>','<']
+for i in range(n):
+
+  if s[i]  in v :
+        ans+=s[i]
+        # s.remove(r)
+        
+    # m=max(m,r-l+1)
+print(ans)
+print(len(ans))
+
+....
+4
+
+
+# ...Program finished with exit code 0
+# Press ENTER to exit console.
