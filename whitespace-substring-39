@@ -1,0 +1,17 @@
+# How do you find the longest substring of a string that contains only whitespaces
+
+s="th    eat er"
+n=len(s)
+l,r,c=0,0,0
+while(r<n):
+    while(s[r]!=" " and l<=r):
+        l+=1
+    c=max(c,r-l+1)
+    r+=1
+print(c)
+
+4
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.
