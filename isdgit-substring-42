@@ -1,0 +1,21 @@
+s='123 09 jhgbd'
+l=0
+r=0
+d={0:0}
+n=len(s)
+m=0
+ans=''
+for i in range(n):
+
+  if s[i].isdigit() :
+        ans+=s[i]
+        # s.remove(r)
+        
+    # m=max(m,r-l+1)
+print(ans)
+print(len(ans))
+
+12309
+5
+ ...Program finished with exit code 0
+ Press ENTER to exit console.
