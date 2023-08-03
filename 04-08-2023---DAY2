@@ -1,0 +1,54 @@
+*Day 2 (Basic Level):*
+1. Write a program to find the largest element in an array.
+#greatest of two number---1
+n,k,l=map(int,input().split())
+if n>k and n>l :
+    print(n,"is greater")
+elif k>n and k>l:
+    print(k,"is greater")
+elif l>n and l>k:
+    print(l,"is greater")
+
+else:
+    print("equal")
+
+or 
+l=[elements present here]
+k=max(l)
+print(k)
+---------------------------------------------------------------------------------------------------------------------------------------------------
+2. Write a program to check if a string is a palindrome.
+n=input()
+f=0
+r=0
+t=n
+while(t>0):
+    n=str(n)
+    k=n[::-1]
+print(f)
+if f==n:
+    print('PALINDROME ')
+else:
+     print('NOT  PALINDROME ')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------    
+3. Write a program to swap two variables without using a temporary variable.
+
+n=int(input())
+k=int(input())
+print('A',n,'B',k)
+n,k=k,n
+print('A',n,'B',k)
+----------------------------------------------------------------------------------------------------------------------------------------------
+4. Write a program to calculate the area of a triangle.
+n=float(input())
+k=int(input())
+print(1/2*n*k)
+----------------------------------------------------------------------------------------------------------------------------------------------
+5. Write a program to check if a year is a leap year.
+#leap year--8
+n=int(input())
+if n%4==0 or( n%400==0 and n%100!=0):
+    print("LEAP YEAR")
+else:
+    print("NOT LEAP YEAR")
