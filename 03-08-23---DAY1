@@ -1,0 +1,54 @@
+03-08-2023
+*Day 1 (Basic Level):*
+1. Write a program to print "Hello, World!" in your preferred programming language.
+print('Hello, World!')
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+2. Write a program to find the sum of two numbers.
+l=0
+n=int(input())
+k=int(input())
+l=n+k
+print(l)
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+3. Write a program to check if a number is even or odd.
+#even or odd number---2
+n=int(input())
+if n%2==0:
+    print("EVEN")
+elif n%2!=0:
+    print("ODD")
+
+else:
+    print("INVALID")
+------------------------------------------------------------------------------------------------------------------------------------------------------
+4. Write a program to calculate the factorial of a given number.
+def fact(n):
+    #return fact(n)*fact(n-1)
+    s=n
+    #for i in range(n,1,-1):
+        # s*=i
+    if s == 0:
+        return 1
+
+    return s*fact(n-1)    
+
+
+n=int(input())
+f=fact(n)
+print(f)
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+5. Write a program to reverse a string.
+n=int(input())
+f=0
+r=0
+
+while(n>0):
+    #n=str(n)
+    #k=n[::-1]
+    r=n%10
+    f=f*10+r
+    n=n//10
+print(f)
+    
+
