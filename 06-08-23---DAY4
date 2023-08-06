@@ -1,0 +1,118 @@
+*Day 4 (Intermediate Level):*
+1. Write a program to implement a binary search algorithm.
+# Binary Search in python
+
+
+def binarySearch(array, x, low, high):
+
+    # Repeat until the pointers low and high meet each other
+    while low <= high:
+
+        mid = low + (high - low)//2
+
+        if array[mid] == x:
+            return mid
+
+        elif array[mid] < x:
+            low = mid + 1
+
+        else:
+            high = mid - 1
+
+    return -1
+
+
+array = [3, 4, 5, 6, 7, 8, 9]
+x = 4
+
+result = binarySearch(array, x, 0, len(array)-1)
+
+if result != -1:
+    print("Element is present at index " + str(result))
+else:
+    print("Not found")
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2. Write a program to find the GCD (Greatest Common Divisor) of two numbers.
+def hcffunc(n1,n2):
+    smaller=0
+    if n1<n2:
+        smaller=n1
+    else:
+        smaller=n2
+    for i in  range(1,smaller+1):
+        if n1%i==0 and n2%i==0:
+            hcf=i
+
+    return hcf
+
+
+n1=int(input())
+n2=int(input())
+print(hcffunc(n1,n2))
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3. Write a program to find the Fibonacci sequence up to a given number.
+n=int(input())
+a=0
+b=1
+s=0
+for i in range(n):
+    a=b
+    b=s
+    print(s)
+    s=a+b
+
+    
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4. Write a program to check if a number is a prime number.
+n=int(input())
+f=0
+for i in range(2,n):
+
+    if n%i==0:
+        f=1
+
+if f==1:   
+    print("NOT PRIME num")
+else:
+    print("prime num")
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+5. Write a program to implement a stack data structure.
+# Stack implementation in python
+
+
+# Creating a stack
+def create_stack():
+    stack = []
+    return stack
+
+
+# Creating an empty stack
+def check_empty(stack):
+    return len(stack) == 0
+
+
+# Adding items into the stack
+def push(stack, item):
+    stack.append(item)
+    print("pushed item: " + item)
+
+
+# Removing an element from the stack
+def pop(stack):
+    if (check_empty(stack)):
+        return "stack is empty"
+
+    return stack.pop()
+
+
+stack = create_stack()
+push(stack, str(1))
+push(stack, str(2))
+push(stack, str(3))
+push(stack, str(4))
+print("popped item: " + pop(stack))
+print("stack after popping an element: " + str(stack))
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
