@@ -1,0 +1,55 @@
+
+*Day 3 (Intermediate Level):*
+1. Write a program to find the second largest element in an array.
+k=int(input())
+arr=list(map(int,input().split()))
+arr.sort()
+print(arr)
+print(arr[k-1])
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+2. Write a program to sort an array in ascending order using the bubble sort algorithm.
+l=[13,23,45,40,20]
+for i in range(len(l)):
+    for j in range(i+1):
+        if l[j]>l[i]:
+            l[i],l[j]=l[j],l[i]
+
+print(l)           
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+3. Write a program to reverse a linked list.
+class Solution:
+    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        prev=None
+        nex=None
+        while head !=None:
+           nex= head.next
+           head.next= prev
+           prev=head
+           head=nex
+
+        return prev   
+---------------------------------------------------------------------------------------------------------------------------------------------------
+4. Write a program to find the factorial of a number using recursion.
+def fact(n):
+    s=n
+    if s == 0:
+        return 1
+    return s*fact(n-1)    
+n=int(input())
+f=fact(n)
+print(f)
+-----------------------------------------------------------------------------------------------------------------------------------------------
+5. Write a program to check if a given string is an anagram.
+
+s = "anagram"
+t = "nagaram"
+# s = "rat"
+# t = "car"
+if sorted(s)==sorted(t):
+    print("anagram")
+    
+else:    
+        print("not anagram")
+
