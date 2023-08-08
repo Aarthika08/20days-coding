@@ -1,0 +1,43 @@
+*Day 5 (Intermediate Level):*
+1. Write a program to implement a queue data structure.
+2. Write a program to merge two sorted arrays into a single sorted array.
+3. Write a program to reverse a sentence without reversing the words.
+4. Write a program to find the power of a number using recursion.
+5. Write a program to find the number of occurrences of a given element in an array.
+
+*Week 2:*
+
+*Day 6 (Intermediate Level):*
+1. Write a program to find the third largest element in an array.
+2. Write a program to sort an array in descending order using the selection sort algorithm.
+3. Write a program to find the factorial of a number without using recursion.
+4. Write a program to find the LCM (Least Common Multiple) of two numbers.
+5. Write a program to implement a linked list data structure.
+
+*Day 7 (Intermediate Level):*
+1. Write a program to find the sum of digits of a given number.
+2. Write a program to check if a string contains only digits.
+3. Write a program to reverse a sentence using a stack.
+4. Write a program to find the largest prime number in a given range.
+5. Write a program to implement a queue using two stacks.
+
+*Day 8 (Advanced Level):*
+1. Write a program to find the kth smallest element in an array using QuickSelect algorithm.
+2. Write a program to implement a binary search tree and perform insertion and deletion.
+3. Write a program to find the longest common subsequence of two strings.
+4. Write a program to implement a hash table data structure with collision handling.
+5. Write a program to check if a given graph is connected using Depth-First Search (DFS) or Breadth-First Search (BFS).
+
+*Day 9 (Advanced Level):*
+1. Write a program to perform matrix multiplication.
+2. Write a program to implement Dijkstra's algorithm to find the shortest path in a weighted graph.
+3. Write a program to implement the Knuth-Morris-Pratt (KMP) algorithm for pattern matching.
+4. Write a program to perform a binary search on a rotated sorted array.
+5. Write a program to implement a priority queue data structure using a binary heap.
+
+*Day 10 (Advanced Level):*
+1. Write a program to perform matrix addition and subtraction.
+2. Write a program to implement the Ford-Fulkerson algorithm for maximum flow in a network.
+3. Write a program to implement the Rabin-Karp algorithm for pattern matching.
+4. Write a program to perform an in-place quicksort algorithm on an array.
+5. Write a program to implement a trie data structure for efficient string search and prefix matching
