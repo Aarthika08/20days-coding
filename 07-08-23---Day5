@@ -32,6 +32,13 @@ def display():
              print("Invalid Option!!!")
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 2. Write a program to merge two sorted arrays into a single sorted array.
+a=[4,1,9,10,21,3]
+b=[78,2,5,7,31]
+a.sort()
+b.sort()
+print(a+b)
 3. Write a program to reverse a sentence without reversing the words.
+s='string is sequence of character'
+print(s[::-1].split())
 4. Write a program to find the power of a number using recursion.
 5. Write a program to find the number of occurrences of a given element in an array.
