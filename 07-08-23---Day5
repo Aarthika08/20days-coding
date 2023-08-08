@@ -41,4 +41,22 @@ print(a+b)
 s='string is sequence of character'
 print(s[::-1].split())
 4. Write a program to find the power of a number using recursion.
+
 5. Write a program to find the number of occurrences of a given element in an array.
+c = input("Enter three values: ")
+d={}
+
+for i in c:
+    if i in d:
+        d[i]+=1
+    else:
+        d[i]=1
+    
+print(d)     
+
+===========================================================================================================================================================Enter three values: apple
+{'a': 1, 'p': 2, 'l': 1, 'e': 1}
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.
