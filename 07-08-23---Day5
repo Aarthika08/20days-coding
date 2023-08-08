@@ -39,9 +39,17 @@ b.sort()
 print(a+b)
 3. Write a program to reverse a sentence without reversing the words.
 s='string is sequence of character'
-print(s[::-1].split())
+k=s.split(' ')[::-1]
+print(' '.join(k))
 4. Write a program to find the power of a number using recursion.
-
+def power(base,exp):
+    if(exp==1):
+        return(base)
+    if(exp!=1):
+        return(base*power(base,exp-1))
+base=int(input("Enter base: "))
+exp=int(input("Enter exponential value: "))
+print("Result:",power(base,exp))
 5. Write a program to find the number of occurrences of a given element in an array.
 c = input("Enter three values: ")
 d={}
